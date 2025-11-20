@@ -1,6 +1,5 @@
 import React from "react";
 import { X } from "lucide-react";
-import Container from "../layout/Container";
 
 export default function Drawer({
   isOpen,

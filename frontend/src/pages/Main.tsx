@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import Input from "../components/ui/Input";
-import { Check, Moon, Plus, Search, X } from "lucide-react";
+import { Check, Plus, X } from "lucide-react";
 import Container from "../components/layout/Container";
 import TaskCard from "../components/layout/main/TaskCard";
 import Tasks from "../components/layout/main/Tasks";

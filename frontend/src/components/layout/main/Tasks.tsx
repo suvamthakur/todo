@@ -1,6 +1,3 @@
-import { Check } from "lucide-react";
-import { FaRegEdit } from "react-icons/fa";
-import { RiDeleteBinLine } from "react-icons/ri";
 import type { Task } from "../../../types/task";
 import { useState } from "react";
 import TableDrawer from "../../drawers/TableDrawer";
