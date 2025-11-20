@@ -14,6 +14,10 @@ app.use(
 );
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Todo backend");
+});
+
 app.use("/task", require("./routes/taskRouter"));
 
 app.use(errorHandler);
