@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --radius: 0.625rem;
+  --background: #ffffff;
+  --foreground: #090e23;
+  --card: #ffffff;
+  --card-foreground: #090e23;
+  --primary: #4566ec;
+  --primary-foreground: #ffffff;
+  --secondary: #253c98;
+  --secondary-foreground: #ffffff;
+  --muted: #242428;
+  --muted-foreground: #717171;
+  --destructive: #b2282d;
+  --destructive-foreground: #ffffff;
+  --success: #19c759;
+  --success-foreground: #ffffff;
+  --border: #e5e5e5;
+  --input: #e5e5e5;
+  --ring: #4566ec;
+}
+
+:root.dark {
+  --background: #18181b;
+  --foreground: #fafafa;
+  --card: #1e1e22;
+  --card-foreground: #fafafa;
+  --popover: #1e1e22;
+  --popover-foreground: #fafafa;
+  --primary: #4566ec;
+  --primary-foreground: #ffffff;
+  --secondary: #1e42d4;
+  --secondary-foreground: #ffffff;
+  --muted: #999999;
+  --muted-foreground: #d4d4d4;
+  --destructive: #b2282d;
+  --destructive-foreground: #ffffff;
+  --success: #4ed27e;
+  --success-foreground: #45c975;
+  --border: #2c2c31;
+  --input: #2c2c31;
+  --ring: #4566ec;
+}
+
+@theme inline {
+  --font-sans: "Poppins", sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+h1 {
+  @apply text-2xl sm:text-4xl font-bold leading-tight;
+}
+
+h2 {
+  @apply text-xl sm:text-3xl font-semibold leading-tight;
+}
+
+h3 {
+  @apply text-lg sm:text-2xl font-semibold;
+}
+
+h4 {
+  @apply text-base sm:text-xl font-medium;
+}
+
+h5 {
+  @apply text-sm sm:text-lg font-medium;
+}
+
+h6 {
+  @apply text-xs sm:text-base font-medium;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #aaa transparent;
+  font-family: var(--font-sans);
+}
+
+body {
+  color: var(--color-foreground);
+  background: var(--color-background);
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px; /* vertical scrollbar width */
+  height: 6px; /* horizontal scrollbar height */
+}
+
+/* Transparent track (no background) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scroll thumb */
+::-webkit-scrollbar-thumb {
+  background: #aaa; /* light gray handle */
+  border-radius: 8px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* darker on hover */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.dark select option {
+  background: #1e1e22;
+  color: #fafafa;
+}
