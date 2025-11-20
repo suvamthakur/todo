@@ -21,10 +21,7 @@ export default function Landing() {
           The best way to manage what you have to do, don't forget your plans
         </p>
 
-        <Button
-          className="mt-auto md:mt-4 py-3"
-          onClick={() => navigate("/main")}
-        >
+        <Button className="mt-4 py-3" onClick={() => navigate("/main")}>
           Get Started
         </Button>
       </div>
